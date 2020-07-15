@@ -21,12 +21,12 @@ var buttonD = document.getElementById("d");
 
 // Quiz question object
 var quizQuestions = [{
-    question: "How many elements can you apply an 'ID' attribute to?",
-    choiceA: "As many as you want",
-    choiceB: "3",
-    choiceC: "1",
-    choiceD: "128",
-    correctAnswer: "c"},
+    question: "What does NBA stand for?",
+    choiceA: "no balance atm",
+    choiceB: "National Basketball Association",
+    choiceC: "new basket area",
+    choiceD: "no boys allowed",
+    correctAnswer: "National Basketball Association"},
   {
     question: "What does DOM stand for?",
     choiceA: "Document Object Model",

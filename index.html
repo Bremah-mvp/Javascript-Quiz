@@ -33,90 +33,81 @@
                 <div class="card bg-dark text-light p-2" style="width: 75rem;">
                     <div class="card-body">
                         <div class="col-lg-8 col-sm-12 mx-auto">
-                            <h1 class="card-title">CODE QUIZ</h1>
-                            <p>Welcome to {SpeedQuiz} the level 1 JavaScript timed quiz that test your understanding
-                                of basic JavaScript
-                                coding.</p>
+                            <h1 class="card-title">NBA QUIZ</h1>
+                            <p class="text-light">This quiz will test your familiarity with NBA Basketball and how much you love it.</p>
 
                             <ul class="" aria-label="First group">
-                                <li><span class="rule-bullet">1</span> There are 4 questions.</li>
-                                <li><span class="rule-bullet">2</span> The timer begins with 3:00.</li>
-                                <li><span class="rule-bullet">3</span> Wrong answers deduct :30.</li>
-                                <li><span class="rule-bullet">4</span> Correct answers add 10 points.</li>
+                                <li><span class="rule-bullet">1</span> There are 5 questions.</li>
+                                <li><span class="rule-bullet">2</span> The timer begins with 50seconds.</li>
+                                <li><span class="rule-bullet">3</span> Wrong answers deduct 5seconds.</li>
+                                <li><span class="rule-bullet">4</span> Correct answers adds 15 points.</li>
                                 <li><span class="rule-bullet">5</span> Remaining time is added to score.</li>
-                                <li><span class="rule-bullet">6</span> Add your name to High scores!</li>
+                                <li><span class="rule-bullet">6</span> Add your initials to view high score</li>
                             </ul>
+
+
+                            <div class="start-btn" id="startpage">
+                                
+                                <button id="startbtn">Start Code Quiz</button>
+                                <button id="startPageHighscore" onclick="showHighscore()">High
+                                    Scores</button>
+                            </div>
+
+                            <div id="quiz">
+                                <div id="timer">Time left: </div>
+                                <div id="questions">
+                                    <p>Questions Placeholder</p>
+                                </div>
+                                <button id="a" onclick="checkAnswer('a')">A</button>
+                                <button id="b" onclick="checkAnswer('b')">B</button>
+                                <button id="c" onclick="checkAnswer('c')">C</button>
+                                <button id="d" onclick="checkAnswer('d')">D</button>
+                                <div id="result"></div>
+                            </div>
+                            <div id="gameover">
+
+                                <div id="finalScore"></div>
+                                <input type="text" size="40" placeholder="Enter you initials for high score"
+                                    name="intials" id="initials" />
+                                <button id="submitScore">Submit Score</button>
+                            </div>
+                            <div id=highscoreContainer>
+                                <div id="high-scorePage">
+                                    <div id="highscore-header">
+                                        <h3>User Initials</h3>
+                                        <h3>Score</h3>
+                                    </div>
+                                    <div id="highscore-initials"></div>
+                                    <div id="highscore-score"></div>
+                                </div>
+                                <div id="endGameBtns">
+                                    <button id="playAgain" onclick="replayQuiz()">Play
+                                        Again</button>
+                                    <button id="clearHighscore" onclick="clearScore()">Clear
+                                        Highscores</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-       
-
-        <div class="container">
-            <div class="row">
-                <div class="card bg-dark text-light p-2" style="width: 75rem;">
-                    <div class="card-body">
-                        <div class="col-lg-8 col-sm-12 mx-auto">
-                            <div class="content">
-                                <div id="startpage">
-                                    <h2>This quiz will test your knowledge</h2>
-                                    <h2>of various coding and web design concepts</h2>
-                                    <button id="startbtn">Start Code Quiz</button>
-                                    <button id="startPageHighscore" onclick="showHighscore()">High
-                                        Scores</button>
-                                </div>
-
-                                <div id="quiz">
-                                    <div id="timer">Time left: </div>
-                                    <div id="questions">
-                                        <p>Questions Placeholder</p>
-                                    </div>
-                                    <button id="a" onclick="checkAnswer('a')">A</button>
-                                    <button id="b" onclick="checkAnswer('b')">B</button>
-                                    <button id="c" onclick="checkAnswer('c')">C</button>
-                                    <button id="d" onclick="checkAnswer('d')">D</button>
-                                    <div id="result"></div>
-                                </div>
-                                <div id="gameover">
-
-                                    <div id="finalScore"></div>
-                                    <input type="text" size="40" placeholder="Enter you initials for high score"
-                                        name="intials" id="initials" />
-                                    <button id="submitScore">Submit Score</button>
-                                </div>
-                                <div id=highscoreContainer>
-                                    <div id="high-scorePage">
-                                        <div id="highscore-header">
-                                            <h3>User Initials</h3>
-                                            <h3>Score</h3>
-                                        </div>
-                                        <div id="highscore-initials"></div>
-                                        <div id="highscore-score"></div>
-                                    </div>
-                                    <div id="endGameBtns">
-                                        <button id="playAgain" onclick="replayQuiz()">Play
-                                            Again</button>
-                                        <button id="clearHighscore" onclick="clearScore()">Clear
-                                            Highscores</button>
-                                    </div>
-                                </div>
-                            </div>
 
 
-                            <!-- Optional JavaScript -->
-                            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-                            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                                crossorigin="anonymous"></script>
-                            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-                                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-                                crossorigin="anonymous"></script>
-                            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-                                integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-                                crossorigin="anonymous"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
 
-                            <script src="script.js"></script>
+        <script src="script.js"></script>
+        <script src="app.js"></script>
 </body>
 
 
