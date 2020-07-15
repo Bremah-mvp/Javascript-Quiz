@@ -49,9 +49,7 @@
         margin-top: 3px;
       }
     
-      button:hover{
-          box-shadow: 4px 3px 6px #4450bd;
-      }
+    
     
     #startpage{
         display: flex;
@@ -67,13 +65,9 @@
         text-shadow: .5px .5px black;
         text-align: center;
     }
-    #quiz {
-        display: none;
-    }
     
-    #result {
-        display: none;
-    }
+    
+    
     
     #gameover {
         text-align: center;
@@ -141,6 +135,4 @@
         font-weight: bold;
     }
     
-    #endGameBtns{
-        display: none;
-    }
+   
