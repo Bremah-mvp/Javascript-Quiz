@@ -1,32 +1,92 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
 
     <title>Code Quiz</title>
-  </head>
-  <body>
-    
+</head>
+
+<body class="bg-info">
+
+    <!-- As a link -->
+    <main>
+        <nav class="navbar navbar-light  bg-dark">
+            <a class="navbar-brand text-light" href="#">CODE QUIZ</a>
+        </nav>
+        </div>
+<br/><br/>
+
+<div class="container">
+
+    <div id="startpage">
+        <h2>This quiz will test your knowledge</h2>
+        <h2>of various coding and web design concepts</h2>
+    <button id="startbtn">Start Code Quiz</button>
+    <button id="startPageHighscore" onclick="showHighscore()">High Scores</button>
+    </div>
+
+    <div id="quiz">
+        <div id="timer">Time left: </div>
+            <div id="questions"><p>Questions Placeholder</p></div>
+                <button id="a" onclick="checkAnswer('a')">A</button>
+                <button id="b" onclick="checkAnswer('b')">B</button>
+                <button id="c" onclick="checkAnswer('c')">C</button>
+                <button id="d" onclick="checkAnswer('d')">D</button>
+            <div id="result"></div>
+    </div>
+    <div id="gameover">
+
+        <div id="finalScore"></div>
+        <input type="text" size = "40" placeholder="Enter you initials for high score" name="intials" id="initials"/>
+        <button id="submitScore">Submit Score</button>
+    </div>
+    <div id=highscoreContainer>
+    <div id="high-scorePage">
+        <div id="highscore-header">
+            <h3>User Initials</h3>
+            <h3>Score</h3>
+        </div>
+        <div id = "highscore-initials"></div>
+        <div id = "highscore-score"></div>
+    </div>
+    <div id="endGameBtns">
+        <button id="playAgain" onclick="replayQuiz()">Play Again</button>
+        <button id="clearHighscore" onclick="clearScore()">Clear Highscores</button>
+    </div>
+</div>
+</div>
+        
 
 
 
 
 
+                            <!-- Optional JavaScript -->
+                            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                                crossorigin="anonymous"></script>
+                            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                                crossorigin="anonymous"></script>
+                            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+                                integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+                                crossorigin="anonymous"></script>
+
+                            <script src="script.js"></script>
+</body>
 
 
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
 </html>
