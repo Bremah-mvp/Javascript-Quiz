@@ -19,56 +19,43 @@ var buttonB = document.getElementById("b");
 var buttonC = document.getElementById("c");
 var buttonD = document.getElementById("d");
 
-// Quiz question object
+// questions about the NBA teams
 var quizQuestions = [{
     question: "What does NBA stand for?",
-    choiceA: "no balance atm",
+    choiceA: "No boys allowed",
     choiceB: "National Basketball Association",
-    choiceC: "new basket area",
-    choiceD: "no boys allowed",
-    correctAnswer: "National Basketball Association"},
-  {
-    question: "What does DOM stand for?",
-    choiceA: "Document Object Model",
-    choiceB: "Display Object Management",
-    choiceC: "Digital Ordinance Model",
-    choiceD: "Desktop Oriented Mode",
-    correctAnswer: "a"},
-   {
-    question: "What is used primarily to add styling to a web page?",
-    choiceA: "HTML",
-    choiceB: "CSS",
-    choiceC: "Python",
-    choiceD: "React.js",
+    choiceC: "New basketball association",
+    choiceD: "128",
     correctAnswer: "b"},
-    {
-    question: "What HTML tags are JavaScript code wrapped in?",
-    choiceA: "&lt;div&gt;",
-    choiceB: "&lt;link&gt;",
-    choiceC: "&lt;head&gt;",
-    choiceD: "&lt;script&gt;",
+  {
+    question: "Who won the first ever NBA championship?",
+    choiceA: "Golden state worriors",
+    choiceB: "Lakers",
+    choiceC: "Chicago bulls",
+    choiceD: "Boston Celtics",
     correctAnswer: "d"},
-    {
-    question: "When is localStorage data cleared?",
-    choiceA: "No expiration time",
-    choiceB: "On page reload",
-    choiceC: "On browser close",
-    choiceD: "On computer restart",
-    correctAnswer: "a"},  
-    {
-    question: "What does WWW stand for?",
-    choiceA: "Web World Workings",
-    choiceB: "Weak Winter Wind",
-    choiceC: "World Wide Web",
-    choiceD: "Wendy Wants Waffles",
+   {
+    question: "Which NBA franchise has won the most championships?",
+    choiceA: "Chicago bulls",
+    choiceB: "Denver nuggets",
+    choiceC: "Boston celtics",
+    choiceD: "Portland Trail blazers",
     correctAnswer: "c"},
     {
-    question: "What HTML attribute references an external JavaScript file?",
-    choiceA: "href",
-    choiceB: "src",
-    choiceC: "class",
-    choiceD: "index",
-    correctAnswer: "b"},
+    question: "What NBA team did Micheal Jordan play for?",
+    choiceA: "Sixers",
+    choiceB: "Miami Heat",
+    choiceC: "Dallas mavericks",
+    choiceD: "chicago Bulls",
+    correctAnswer: "d"},
+    {
+    question: "What NBA team does Stephen Curry play for?",
+    choiceA: "Raptors",
+    choiceB: "Golden state warriors",
+    choiceC: "San Antonio Spurs",
+    choiceD: "Houston rockets",
+    correctAnswer: "b"},  
+   
         
     
     ];
@@ -127,7 +114,7 @@ submitScoreBtn.addEventListener("click", function highscore(){
     
     
     if(highscoreInputName.value === "") {
-        alert("Initials cannot be blank");
+        alert("enter desired initials");
         return false;
     }else{
         var savedHighscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
@@ -199,12 +186,12 @@ function checkAnswer(answer){
 
     if (answer === correct && currentQuestionIndex !== finalQuestionIndex){
         score++;
-        alert("That Is Correct!");
+        alert("!WOW! U GOT IT.");
         currentQuestionIndex++;
         generateQuizQuestion();
         //display in the results div that the answer is correct.
     }else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex){
-        alert("That Is Incorrect.")
+        alert("Ooops, sorry try again later.")
         currentQuestionIndex++;
         generateQuizQuestion();
         //display in the results div that the answer is wrong.
