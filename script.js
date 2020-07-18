@@ -25,7 +25,7 @@ var quizQuestions = [{
     choiceA: "No boys allowed",
     choiceB: "National Basketball Association",
     choiceC: "New basketball association",
-    choiceD: "128",
+    choiceD: "Netflix best adds",
     correctAnswer: "b"},
   {
     question: "Who won the first ever NBA championship?",
@@ -69,7 +69,7 @@ var correct;
 
 // This function cycles through the object array containing the quiz questions to generate the questions and answers.
 function generateQuizQuestion(){
-    gameoverDiv.style.display = "none";
+    gameoverDiv.style.display = "game over";
     if (currentQuestionIndex === finalQuestionIndex){
         return showScore();
     } 
@@ -191,9 +191,9 @@ function checkAnswer(answer){
         generateQuizQuestion();
         //display in the results div that the answer is correct.
     }else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex){
-
-        alert("Ooops, sorry try again later.")
         timeLeft -=10;
+        alert("Ooops, sorry try again later.")
+       
         currentQuestionIndex++;
         generateQuizQuestion();
         //display in the results div that the answer is wrong.
