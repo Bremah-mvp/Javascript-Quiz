@@ -191,7 +191,9 @@ function checkAnswer(answer){
         generateQuizQuestion();
         //display in the results div that the answer is correct.
     }else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex){
+
         alert("Ooops, sorry try again later.")
+        timeLeft -=10;
         currentQuestionIndex++;
         generateQuizQuestion();
         //display in the results div that the answer is wrong.

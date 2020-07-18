@@ -1,7 +1,11 @@
 
-.body{
-    background-color: none;
-    }
+.body {
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
+    background-image: url(./cold\ play.jpg); 
+  }
+  
     
     li{
         padding-bottom: 3px;
@@ -11,11 +15,10 @@
     }
     
     p{
-        color: black;
-        text-shadow: .5px .5px white;
+        color:white;
         text-align: center;
         font-size: xx-large;
-        font-family: sans-serif;
+        font-family: 'Times New Roman', Times, serif;
     
     }
     h2{
