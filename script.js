@@ -66,7 +66,7 @@ var quizQuestions = [{
 
 var finalQuestionIndex = quizQuestions.length;
 var currentQuestionIndex = 0;
-var timeLeft = 25;
+var timeLeft = 30;
 var timerInterval;
 var score = 0;
 var correct;
@@ -179,7 +179,7 @@ function replayQuiz() {
     highscoreContainer.style.display = "none";
     gameoverDiv.style.display = "none";
     startQuizDiv.style.display = "flex";
-    timeLeft = 25;
+    timeLeft = 30;
     score = 0;
     currentQuestionIndex = 0;
 }

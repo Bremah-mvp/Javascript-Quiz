@@ -84,7 +84,7 @@
         
         font-family: Georgia, 'Times New Roman', Times, serif;
         background-color:red;
-        border: 3px double #cccccc;
+        
         color:white;
         text-align: center;
         
@@ -95,6 +95,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-weight: bolder;
     }
 
     /* timer features */
@@ -113,7 +114,11 @@
     }
     
     #result {
+
+        font-stretch: normal;
         display: none;
+        font-family: 'Times New Roman', Times, serif;
+
     }
     
     /* game over display atrributes */
@@ -128,6 +133,8 @@
     #highScore{
         height: 2rem;
         border: 1.5px;
+        font-size: large;
+        font-family: 'Times New Roman', Times, serif;
     }
     
     /* highscore page attributes */
