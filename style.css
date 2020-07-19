@@ -1,16 +1,18 @@
-
+ /*body attributes*/
 .body {
     font-size: 20px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     background-color: black;
     background-image: url(./cold\ play.jpg); 
   }
   
-    
+    /* line attributes */
     li{
         padding-bottom: 2px;
         color: white;
        list-style-type: none;
+       font-style: italic;
+       font-weight: bolder;
     }
     
     p{
@@ -29,8 +31,8 @@
     }
     
     .container {
-        width: 90vw;
-        height: 90vh;
+        width: 120vw;
+        height: 120vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -41,10 +43,9 @@
       button {
         
         font-family: Georgia, 'Times New Roman', Times, serif;
-        background-color:black;
-        
+        background-color:red;
         border: 3px double #cccccc;
-        color: #eeeeee;
+        color:white;
         text-align: center;
         
       }
