@@ -1,3 +1,15 @@
+ /* navbar brand styles set */
+ .navbar-brand {
+     text-emphasis: none;
+     text-align: center;
+     background-color: darkgray;
+     color: red;
+     font-weight: bolder;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: xx-large;
+ }
+ 
+ 
  /*body attributes*/
 .body {
     font-size: 20px;
@@ -5,18 +17,39 @@
     background-color: black;
     background-image: url(./cold\ play.jpg); 
   }
+
+  /* quiz-guide atrributes */
+  .quiz-guide {
+      font-size: x-large;
+      background-image: url(./cold\ play.jpg);
+      background-color: none;
+      font-weight: bolder;
+      font-stretch: expanded;
+      color: black;
+  }
+
+  /* cardtitle styles */
+  .card-title {
+ 
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-decoration: underline;
+    background-color:blue;
+  }
   
     /* line attributes */
-    li{
+    li {
         padding-bottom: 2px;
-        color: white;
+        color:red;
        list-style-type: none;
        font-style: italic;
        font-weight: bolder;
+       font-size: xx-large;
     }
     
     /* paragraph attributes */
-    p{
+    p {
         color:white;
         text-align: center;
         font-size: xx-large;
@@ -66,9 +99,9 @@
 
     /* timer features */
     #timer{
-        font-family: sans-serif;
+        font-family: 'Times New Roman', Times, serif;
         background-color: yellowgreen;
-        color: #eeeeee;
+        color:white;
         font-size: x-large;
         text-align: center;
     }

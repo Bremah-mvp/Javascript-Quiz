@@ -1,4 +1,4 @@
-// values evaluated
+// variables set
 var quizBody = document.getElementById("quiz");
 var resultsEl = document.getElementById("result");
 var finalScoreEl = document.getElementById("finalScore");
