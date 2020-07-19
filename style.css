@@ -63,6 +63,7 @@
         flex-direction: column;
         align-items: center;
     }
+
     /* timer features */
     #timer{
         font-family: sans-serif;
@@ -82,6 +83,7 @@
         display: none;
     }
     
+    /* game over display atrributes */
     #gameover {
         text-align: center;
         display: none;
@@ -89,11 +91,13 @@
         align-items: center;
     }
     
+    /* highscore border and height set */
     #highScore{
-        height: 1.5rem;
-        border: groove 2px;
+        height: 2rem;
+        border: 1.5px;
     }
     
+    /* highscore page attributes */
     #high-scorePage{
         display: none;
         width: 50%;
@@ -104,15 +108,18 @@
         background: lightsteelblue;
     }
     
+    /* highscore header styles */
     #highscore-header{
         display:flex;
         justify-content: space-around;
         border-bottom-style: outset;
         margin-bottom: .5rem;
-        background-color: #5e6df1;
-        color: #eeeeee;
-        font-family: sans-serif;
+        background-color:black;
+        color:wheat;
+        font-family: 'Times New Roman', Times, serif;
     }
+
+    /* highscore container atttributes */
     #highscoreContainer{
         height: 100%;
         width: 100%;
@@ -122,32 +129,36 @@
         justify-content: center;
     }
     
+/* initials styles set */
     #initials{
         margin: .5rem;
-        height: 1.75rem;
+        height: 2rem;
     }
     
+/* atrributes */
     #highscore-initials{
         display: inline-block;
-        padding-left: 9.5rem;
-        font-family: sans-serif;
-        font-weight: bold;
+        padding-left: 10em;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bolder;
     }
     
+    /* highscore score style */
     #highscore-score{
         float: right;
-        padding-right: 8.75rem;
-        font-family: sans-serif;
+        padding-right: 10rem;
+        font-family: 'Times New Roman', Times, serif;
         font-weight: bold;
     }
     
+    /* final score atrributes set */
     #finalScore{
         padding-bottom: 0.5rem;
         font-size: x-large;
-        font-family: sans-serif;
-        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bolder;
     }
-    
+    /* end game display will be none */
     #endGameBtns{
         display: none;
     }
