@@ -28,6 +28,7 @@ var quizQuestions = [{
     choiceD: "Netflix best adds",
     correctAnswer: "b"
 },
+
 {
     question: "Who won the first ever NBA championship?",
     choiceA: "Golden state worriors",
@@ -65,7 +66,7 @@ var quizQuestions = [{
 
 var finalQuestionIndex = quizQuestions.length;
 var currentQuestionIndex = 0;
-var timeLeft = 50;
+var timeLeft = 25;
 var timerInterval;
 var score = 0;
 var correct;
@@ -76,6 +77,7 @@ function generateQuizQuestion() {
     if (currentQuestionIndex === finalQuestionIndex) {
         return showScore();
     }
+
     var currentQuestion = quizQuestions[currentQuestionIndex];
     questionsEl.innerHTML = "<p>" + currentQuestion.question + "</p>";
     buttonA.innerHTML = currentQuestion.choiceA;
@@ -177,7 +179,7 @@ function replayQuiz() {
     highscoreContainer.style.display = "none";
     gameoverDiv.style.display = "none";
     startQuizDiv.style.display = "flex";
-    timeLeft = 50;
+    timeLeft = 25;
     score = 0;
     currentQuestionIndex = 0;
 }
@@ -196,11 +198,12 @@ function checkAnswer(answer) {
     } else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex) {
 
         alert("Ooops, sorry try again.")
-        startTime -= 30;
+        startTime -= 5;
         currentQuestionIndex++;
         generateQuizQuestion();
      
     } else {
+        
         showScore();
     }
 }
