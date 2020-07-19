@@ -19,6 +19,28 @@ Heres a link to view how the APP works: https://bremah-mvp.github.io/Javascript-
 
                         HOW IT WORKS
 The quiz starts at 30 seconds.
+
+The time never stops when u hit start button.
+
 It has a maximum of five questions about NBA basketball. 
+
 Each question comes with 5 choices of answers u can select.
-You must select
+
+You must select an answer to be presented with the next question.
+
+ONLY THE RIGHT ANSWER ACTIVATES THE NEXT QUESTION.
+
+When you select the WRONG ANSWER  u dont get to the next question, you loose a few
+seconds and also continue to loose more time until you select the right answer.
+
+Time lost increases as u take more time looking for th right answer.
+
+
+When the time erapses, or when the timer counts down to 0, the user will be presented with 
+the final scores.
+
+USER can then enter desired initials to save the highscores..
+The quiz then resetts for the user to play again..
+
+
+    !GOOD LUCK with this extremely fun game..!
