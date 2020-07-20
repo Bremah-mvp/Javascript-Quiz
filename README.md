@@ -40,10 +40,11 @@ When the time erapses, or when the timer counts down to 0, the user will be pres
 the final scores.
 
 USER can then enter desired initials to save the highscores..
+
 The quiz then resetts for the user to play again..
 
 
-    !GOOD LUCK with this extremely fun game..!
+    !..GOOD LUCK with this extremely fun game..!
 
 ![image ones](https://github.com/Bremah-mvp/Javascript-Quiz/blob/master/assets/one.png)
 ![image two](https://github.com/Bremah-mvp/Javascript-Quiz/blob/master/assets/two.png)
