@@ -46,3 +46,5 @@ The quiz then resetts for the user to play again..
     !GOOD LUCK with this extremely fun game..!
 
 ![image ones](https://github.com/Bremah-mvp/Javascript-Quiz/blob/master/assets/one.png)
+![image two](https://github.com/Bremah-mvp/Javascript-Quiz/blob/master/assets/two.png)
+![image three](https://github.com/Bremah-mvp/Javascript-Quiz/blob/master/assets/three.png)
