@@ -45,4 +45,4 @@ The quiz then resetts for the user to play again..
 
     !GOOD LUCK with this extremely fun game..!
 
-![image one](http://url/to/one.png)
+![image ones](https://github.com/Bremah-mvp/Javascript-Quiz/blob/master/assets/one.png)
